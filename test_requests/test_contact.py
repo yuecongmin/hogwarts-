@@ -44,3 +44,19 @@ def test_delete_member():
     assert 0 == r.json()['errcode']
     print(r.json())
 
+
+@pytest.mark.parametrize("left, right", [(1, 9), (4, 19)])
+def test_qidianfa(left, right, pre=1):
+    """七点法数据生产"""
+    result = []
+    # 提取左边界三个值
+    lefts = [left - pre, left, left + pre]
+    # 提取右边界三个值
+    rights = [right - pre, right, right + pre]
+    # 提取中间值
+    mid = (left + right) // 2
+    # 将三组数据组合
+    result += lefts
+    result.append(mid)
+    result += rights
+    print(result)
