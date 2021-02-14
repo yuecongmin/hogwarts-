@@ -3,7 +3,6 @@ from time import sleep
 
 from selenium_frame_window.base import Base
 
-
 class Testfile(Base):
     def test_file(self):
         # 文件上传用send_keys可以实现

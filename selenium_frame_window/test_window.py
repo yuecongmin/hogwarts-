@@ -2,7 +2,6 @@
 from time import sleep
 
 from selenium import webdriver
-
 from selenium_frame_window.base import Base
 import pytest
 
