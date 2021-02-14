@@ -5,7 +5,6 @@ from selenium.webdriver import ActionChains
 
 from selenium_frame_window.base import Base
 
-
 class Testalert(Base):
     def test_alert(self):
         # 打开网页、切换到frame里面

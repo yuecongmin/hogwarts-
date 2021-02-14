@@ -1,6 +1,5 @@
 # *_*coding:utf-8 *_*
 from time import sleep
-
 import pytest
 
 from selenium_frame_window.base import Base

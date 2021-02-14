@@ -1,7 +1,6 @@
 # *_*coding:utf-8 *_*
 from time import sleep
 
-
 import pytest
 from selenium import webdriver
 from selenium.webdriver import ActionChains, TouchActions
