@@ -27,9 +27,6 @@ class AddmemberPage(BasePage):
         self.driver.find_element(*self._locationAdd_acctid).send_keys(acctid)
         self.driver.find_element(*self._locationAdd_phone).send_keys(phone)
         self.driver.find_element(*self._locationAdd_save).click()
-        # acctid_error_message = self.driver.find_element(By.CSS_SELECTOR, ".member_edit_item_right.ww_inputWithTips_WithErr .ww_inputWithTips_tips").text
-        # phonr_error_message = self.driver.find_element(By.CSS_SELECTOR, ".member_edit_item_right.ww_inputWithTips_WithErr .ww_inputWithTips_tips").text
-        # error_list = [acctid_error_message, phonr_error_message]
         # 打印返回的所有错误信息，返回一个列表形式
         res = self.finds(By.CSS_SELECTOR, ".ww_inputWithTips_tips")
         print(res)

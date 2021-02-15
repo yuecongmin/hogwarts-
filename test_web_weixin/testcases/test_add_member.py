@@ -38,9 +38,6 @@ class TestAddmember:
         res = self.main.goto_add_member().add_member_fail(acctid, phone)
         assert expect_res in res
 
-    # def teardown(self):
-    #     self.main.back_main()
-
     def test_add_member_by_contact(self):
         # 通过通讯录页面添加成功
         # 1.跳转到通讯录页面，2.添加成员

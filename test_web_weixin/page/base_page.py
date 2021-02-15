@@ -17,20 +17,6 @@ class BasePage:
         else:
             self.driver = base_driver
 
-
-    # def get_cookie(self):
-    #     opt = webdriver.ChromeOptions()
-    #     # 获取cookie存储到yml文件中
-    #     opt.debugger_address = "127.0.0.1:9222"
-    #     self.driver = webdriver.Chrome(options=opt)
-    #     self.driver.get("https://work.weixin.qq.com/wework_admin/frame#contacts")
-    #     cookie = self.driver.get_cookies()
-    #     print(cookie)
-    #     with open("cookie.yml", "w", encoding="UTF-8") as f:
-    #         yaml.dump(cookie, f)
-
-
-
     def __cookie_login(self):
 
         with open("cookie.yml", encoding="UTF-8") as f:

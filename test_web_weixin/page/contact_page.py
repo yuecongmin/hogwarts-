@@ -7,7 +7,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 
 from test_web_weixin.page.base_page import BasePage
 
-
 class ContactPage(BasePage):
     _location_member_list = (By.CSS_SELECTOR, ".member_colRight_memberTable_td:nth-child(2)")
     _location_add_member = (By.CSS_SELECTOR, ".ww_operationBar .js_add_member")

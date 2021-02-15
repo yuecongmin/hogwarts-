@@ -22,7 +22,6 @@ class MainPage(BasePage):
         self.find(By.ID, "menu_contacts").click()
         return ContactPage(self.driver)
 
-
     # def back_main(self):
     #     self.find(By.ID, "menu_index").click()
     #     self.find(By.CSS_SELECTOR, "a[node-type='cancel']").click()
